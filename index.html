@@ -12,9 +12,9 @@
 <body>
     <div class="container">
         <header>
-            <div class="menu">
-                <span class="material-symbols-outlined">notes</span>
-                <nav>
+            <div class="menu" id="menu">
+                <button class="material-symbols-outlined" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">notes</button>
+                <nav id="primary-nav" aria-label="Primary">
                     <a href="#">Home</a>
                     <a href="#">Collections</a>
                     <a href="#">New</a>
@@ -362,6 +362,18 @@
             </div>
         </div>
     </footer>
+    <script>
+      (function() {
+        const menu = document.getElementById('menu');
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('primary-nav');
+        if (!menu || !toggle || !nav) return;
+        toggle.addEventListener('click', function() {
+          const isActive = menu.classList.toggle('active');
+          toggle.setAttribute('aria-expanded', String(isActive));
+        });
+      })();
+    </script>
     </div>
 </body>
 </html>
