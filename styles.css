@@ -27,6 +27,8 @@ header {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 50;
 }
 .menu,
 .menu nav {
@@ -63,6 +65,23 @@ header {
   text-decoration: none;
   border: none;
 }
+#menu-toggle.material-symbols-outlined,
+.menu .material-symbols-outlined {
+  background: transparent;
+  border: none;
+  padding: 6px;
+  border-radius: 8px;
+  line-height: 1;
+}
+
+.menu .material-symbols-outlined:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.menu .material-symbols-outlined:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2) inset;
+}
 #heart {
   color: #f4f4f4;
   background-color: #000000;
@@ -97,6 +116,31 @@ header {
   height: 40px;
   text-align: center;
   font-size: 20px;
+}
+
+/* Mobile Nav Overlay and open-state handling */
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease;
+  z-index: 40;
+}
+
+body.nav-open {
+  overflow: hidden;
+}
+
+body.nav-open .nav-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-8px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 .cart-i {
     display: flex;
@@ -1060,15 +1104,24 @@ header {
   .menu.active nav {
     display: flex;
     flex-direction: column;
-    background: #fff;
+    gap: 0.75rem;
     position: absolute;
-    top: 80px;
+    top: calc(100% + 12px);
     left: 0;
-    width: 100%;
-    padding: 1.5rem 0;
-    gap: 1rem;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    right: 0;
+    background: #ffffff;
+    padding: 1rem 1.25rem;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    animation: slideDown 200ms ease both;
+    z-index: 60;
+    text-align: left;
+  }
+  .menu.active nav a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
   }
 
   .four-icons {
