@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XIV Fashion - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="menu">
+                <span class="material-symbols-outlined">notes</span>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Collections</a>
+                    <a href="#">New</a>
+                </nav>
+            </div>
+            <div class="logoHolder">
+                    <svg width="47" height="47" viewBox="0 0 47 47" fill="none">
+                        <rect fill="#D9D9D9" height="33.234" width="33.234" x="23.5" transform="rotate(45 23.5 0)"/>
+                        <path d="M46.6467 23.5003L23.75 46.397V0.603527L46.6467 23.5003Z" fill="black" stroke="#060606" stroke-width="0.5"/>
+                    </svg>
+            </div>
+            <div class="four-icons">
+                <button class="material-symbols-outlined" id="heart">favorite</button>
+                <div class="cart-i">
+                    <button id="cart">cart</button>
+                    <button class="material-symbols-outlined" id="bag">local_mall</button>
+                </div>
+                <button class="material-symbols-outlined" id="person">person</button>
+            </div>
+            <section class="search-section">
+                <nav>
+                    <a href="#">MEN</a>
+                    <a href="#">WOMEN</a>
+                    <a href="#">KIDS</a>
+                </nav>
+                <div class="search">
+                    <span class="material-symbols-outlined" id="search-icon">search</span>
+                    <input type="search" name="search" placeholder="search" id="search">
+                </div>
+            </section>
+        </header>
+        <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1 class="hero-title">NEW<br>COLLECTION</h1>
+                <p class="hero-subtitle">Summer<br>2024</p>
+            </div>
+            <div class="hero-images">
+                <div class="hero-image hero-image-1">
+                    <img src="images/cloth4.webp" alt="Fashion model">
+                </div>
+                <div class="hero-image hero-image-2">
+                    <img src="images/cloth4.webp" alt="Fashion model">
+                </div>
+            </div>
+            <div class="hero-cta">
+                <button class="cta-button">
+                    <span>Go To Shop</span>
+                    <svg width="50" height="14" viewBox="0 0 50 14" fill="none">
+                        <path d="M48.5 7H1M1 7L7 1M1 7L7 13" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="hero-controls">
+                    <button class="control-btn" id="no-back">
+                        <svg width="13" height="7" viewBox="0 0 13 7" fill="none">
+                            <path d="M12 6L6.5 1L1 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="control-btn">
+                        <svg width="13" height="7" viewBox="0 0 13 7" fill="none">
+                            <path d="M12 6L6.5 1L1 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- New This Week -->
+        <section class="new-week">
+            <div class="section-header">
+                <h2 class="section-title">NEW<br>THIS WEEK</h2>
+                <span class="section-count">(50)</span>
+                <a href="#" class="see-all">See All</a>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cloth4.webp" alt="V-Neck T-Shirt">
+                        <button class="product-fav">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                <rect fill="#DCDCDC" fill-opacity="0.44" height="34" width="34"/>
+                                <path d="M23 17L17 17M17 17L11 17.0001M17 17L17 11M17 17L17 23" stroke="#0C0C0C" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">V-Neck T-Shirt</p>
+                        <h3 class="product-name">Embroidered Seersucker Shirt</h3>
+                        <p class="product-price">$99</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cloth4.webp" alt="Cotton T Shirt">
+                        <button class="product-fav">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                <rect fill="#DCDCDC" fill-opacity="0.44" height="34" width="34"/>
+                                <path d="M23 17L17 17M17 17L11 17.0001M17 17L17 11M17 17L17 23" stroke="#0C0C0C" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Cotton T Shirt <span class="color-count">+5</span></p>
+                        <h3 class="product-name">Basic Slim Fit T-Shirt</h3>
+                        <p class="product-price">$ 99</p>
+                        <div class="color-swatches">
+                            <span class="swatch" style="background: white; border: 1px solid #ccc;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cloth4.webp" alt="Henley T-Shirt">
+                        <button class="product-fav">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                <rect fill="#DCDCDC" fill-opacity="0.44" height="34" width="34"/>
+                                <path d="M23 17L17 17M17 17L11 17.0001M17 17L17 11M17 17L17 23" stroke="#0C0C0C" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Henley T-Shirt</p>
+                        <h3 class="product-name">Blurred Print T-Shirt</h3>
+                        <p class="product-price">$ 99</p>
+                        <div class="color-swatches">
+                            <span class="swatch" style="background: #dbdcce;"></span>
+                            <span class="color-count">+3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cloth4.webp" alt="Crewneck T-Shirt">
+                        <button class="product-fav">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                <rect fill="#DCDCDC" fill-opacity="0.44" height="34" width="34"/>
+                                <path d="M23 17L17 17M17 17L11 17.0001M17 17L17 11M17 17L17 23" stroke="#0C0C0C" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Crewneck T-Shirt</p>
+                        <h3 class="product-name">Full Sleeve Zipper</h3>
+                        <p class="product-price">$ 99</p>
+                        <div class="color-swatches">
+                            <span class="swatch" style="background: #eae8d9;"></span>
+                            <span class="color-count">+2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-controls">
+                <button class="control-btn" id="no-back">
+                    <svg width="13" height="7" viewBox="0 0 13 7" fill="none">
+                        <path d="M12 6L6.5 1L1 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="control-btn">
+                    <svg width="13" height="7" viewBox="0 0 13 7" fill="none">
+                        <path d="M12 6L6.5 1L1 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Collections Section -->
+        <section class="collections">
+            <div class="section-header">
+                <h2 class="section-title">XIV<br>COLLECTIONS<br>23-24</h2>
+            </div>
+
+            <div class="collection-filters">
+                <nav class="filter-nav">
+                    <a href="#" class="filter-link active">(All)</a>
+                    <a href="#" class="filter-link">Men</a>
+                    <a href="#" class="filter-link">Women</a>
+                    <a href="#" class="filter-link">KID</a>
+                </nav>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <button class="filter-btn">Filters(+)</button>
+                    </div>
+                    <div class="filter-group">
+                        <button class="filter-btn">Sorts(-)</button>
+                        <div class="filter-dropdown">
+                            <span>Less to more</span>
+                            <span>More to Less</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="xiv-products">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cloth4.webp" alt="Cotton T Shirt">
+                        <button class="product-fav">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                <rect fill="#DCDCDC" fill-opacity="0.44" height="34" width="34"/>
+                                <path d="M23 17L17 17M17 17L11 17.0001M17 17L17 11M17 17L17 23" stroke="#787878" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Cotton T Shirt</p>
+                        <h3 class="product-name">Basic Heavy Weight T-shirt</h3>
+                        <p class="product-price">$ 199</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cloth4.webp" alt="Cotton jeans">
+                        <button class="product-fav">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                <rect fill="#DCDCDC" fill-opacity="0.44" height="34" width="34"/>
+                                <path d="M23 17L17 17M17 17L11 17.0001M17 17L17 11M17 17L17 23" stroke="#787878" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Cotton jeans <span class="color-count">+5</span></p>
+                        <h3 class="product-name">Soft Wash straight Fit Jeans</h3>
+                        <p class="product-price">$ 199</p>
+                        <div class="color-swatches">
+                            <span class="swatch" style="background: white; border: 1px solid #ccc;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cloth4.webp" alt="Cotton T Shirt">
+                        <button class="product-fav">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                <rect fill="#DCDCDC" fill-opacity="0.44" height="34" width="34"/>
+                                <path d="M23 17L17 17M17 17L11 17.0001M17 17L17 11M17 17L17 23" stroke="#787878" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Cotton T Shirt <span class="color-count">+5</span></p>
+                        <h3 class="product-name">Basic Heavy Weight T-shirt</h3>
+                        <p class="product-price">$ 199</p>
+                        <div class="color-swatches">
+                            <span class="swatch" style="background: white; border: 1px solid #ccc;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="more-btn">
+                More
+                <svg width="16" height="8" viewBox="0 0 16 8" fill="none">
+                    <path d="M15 7L8 1L1 7" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </section>
+
+        <!-- Approach Section -->
+        <section class="approach">
+            <h2 class="approach-title">OUR APPROACH TO FASHION DESIGN</h2>
+            <p class="approach-text">at elegant vogue , we blend creativity with craftsmanship to create fashion that transcends trends and stands the test of time each design is meticulously crafted, ensuring the highest quelity exqulsite finish</p>
+            
+            <div class="approach-images">
+                <div class="approach-image">
+                    <img src="images/cloth4.webp" alt="Fashion design">
+                </div>
+                <div class="approach-image">
+                    <img src="images/cloth4.webp" alt="Fashion design">
+                </div>
+                <div class="approach-image">
+                    <img src="images/cloth4.webp" alt="Fashion design">
+                </div>
+                <div class="approach-image">
+                    <img src="images/cloth4.webp" alt="Fashion design">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-heading">Info</h3>
+                <nav class="footer-nav">
+                    <a href="#" class="footer-link">PRICING <span>/</span></a>
+                    <a href="#" class="footer-link">ABOUT <span>/</span></a>
+                    <a href="#" class="footer-link">CONTACTS</a>
+                </nav>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Languages</h3>
+                <nav class="footer-nav">
+                    <a href="#" class="footer-link">Eng <span>/</span></a>
+                    <a href="#" class="footer-link">Esp <span>/</span></a>
+                    <a href="#" class="footer-link">Sve</a>
+                </nav>
+            </div>
+
+            <div class="footer-section technologies">
+                <h3 class="footer-heading">Technologies</h3>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <h4 class="tech-name">VR</h4>
+                    </div>
+                    <div class="tech-item">
+                        <h4 class="tech-name">XIV</h4>
+                        <p class="tech-desc">Near-field communication</p>
+                        <span class="tech-slash">/</span>
+                    </div>
+                    <div class="tech-item">
+                        <h4 class="tech-name">QR</h4>
+                    </div>
+                </div>
+                <div class="footer-logo">
+                    <svg width="47" height="47" viewBox="0 0 47 47" fill="none">
+                        <rect fill="#D9D9D9" height="33.234" width="33.234" x="23.5" transform="rotate(45 23.5 0)"/>
+                        <path d="M46.6467 23.5003L23.75 46.397V0.603527L46.6467 23.5003Z" fill="black" stroke="#060606" stroke-width="0.5"/>
+                    </svg>
+                </div>
+            </div>
+
+            <button class="back-to-top">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                    <rect height="63" rx="31.5" stroke="black" width="63" x="0.5" y="0.5"/>
+                    <path d="M26 30L32 24M32 24L38 30M32 24L32 40" stroke="black" stroke-width="1.25"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">© 2024 — copyright</p>
+            <div class="footer-legal">
+                <a href="#" class="legal-link">privacy</a>
+                <a href="#" class="legal-link">Terms</a>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
